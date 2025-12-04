@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My To Do's-->
+        <!--My To-Do's-->
         <scene sceneID="bK1-E1-qEG">
             <objects>
                 <tableViewController id="18g-KZ-1rs" customClass="ToDoTableViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,14 +18,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCellIdentifier" id="gvu-Ed-hEy" customClass="ToDoCell" customModule="ToDoList" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="375" height="45.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="45.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gvu-Ed-hEy" id="chI-Tb-Pe6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-l9-eEa">
-                                            <rect key="frame" x="8" y="1" width="44" height="44"/>
+                                            <rect key="frame" x="8" y="0.66666666666666785" width="44" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="44" id="Yxh-V1-nRg"/>
                                                 <constraint firstAttribute="height" constant="44" id="mgd-DA-vDD"/>
@@ -42,7 +42,7 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J6-Zj-Onc">
-                                            <rect key="frame" x="52" y="12.000000000000002" width="291" height="21.666666666666671"/>
+                                            <rect key="frame" x="52" y="11.999999999999998" width="291" height="21.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="18g-KZ-1rs" id="RuS-45-w86"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My To Do's" id="oqe-e7-5fz">
+                    <navigationItem key="navigationItem" title="My To-Do's" id="oqe-e7-5fz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="s98-hC-U08">
                             <connections>
                                 <segue destination="Phs-Jh-t8V" kind="presentation" id="mkO-pW-i7J"/>
@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="522" y="246"/>
         </scene>
-        <!--New ToDo-->
+        <!--New To Do-->
         <scene sceneID="awv-VO-fLN">
             <objects>
                 <tableViewController id="1Hj-Hw-0rG" customClass="ToDoDetailTableViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -223,7 +223,7 @@
                             <outlet property="delegate" destination="1Hj-Hw-0rG" id="M51-09-Hf9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New ToDo" largeTitleDisplayMode="never" id="5kP-ik-gyi">
+                    <navigationItem key="navigationItem" title="New To Do" largeTitleDisplayMode="never" id="5kP-ik-gyi">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="M7V-nA-PPV">
                             <connections>
                                 <segue destination="Kul-9j-t10" kind="unwind" unwindAction="unwindToToDoListWithSegue:" id="OfA-7F-m5y"/>
